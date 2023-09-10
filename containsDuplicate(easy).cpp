@@ -1,12 +1,17 @@
-class Solution {
+class Solution
+{
 public:
-    bool containsDuplicate(vector<int>& nums) {
-        unordered_map<int,int> hmap;
-        for(int i = 0; i < nums.size(); i++){
-            hmap[nums[i]]++;
+    bool containsDuplicate(vector<int> &nums)
+    {
+        unordered_map<int, int> hmap; // Create a map to store both the numbers and their frequencies.
+        for (int i = 0; i < nums.size(); i++)
+        {                    // Iterate through the given vector.
+            hmap[nums[i]]++; // Save the numbers and their frequency in the map, automatically incrementing it.
         }
-        for(auto x:nums){
-            if(hmap[x]>1){
+        for (auto x : nums)
+        { // Iterate through the given array.
+            if (hmap[x] > 1)
+            { // If frequency is more than one.
                 return true;
             }
         }
