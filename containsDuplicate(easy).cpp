@@ -18,3 +18,20 @@ public:
         return false;
     }
 };
+
+/*
+    --ALTERNATE SOLUTION--
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        unordered_map<int, int> hmap;
+        for(auto num:nums){
+            hmap[num]++;
+            if(hmap[num]>1){
+                return true;
+            }
+        }
+        return false;
+    }
+};
+*/
