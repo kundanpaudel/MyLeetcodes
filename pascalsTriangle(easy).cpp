@@ -14,7 +14,7 @@ public:
             // We need to add previous row elements only for 2nd element
             // until one element before the last element.
             for (int j = 1; j < i; j++)
-            {   // Iterate from second element till second last element.
+            { // Iterate from second element till second last element.
                 // From second to second last element:
                 // add the j index and j-1 index element of previous(i-1) row
                 // then store it in j index of current(i) row.

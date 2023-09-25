@@ -15,7 +15,7 @@ public:
         for (int i = 1; i <= target; i++)
         {
             for (int num : nums)
-            {   // Iterating through the given array/vector and saving it in nums integer variable.
+            { // Iterating through the given array/vector and saving it in nums integer variable.
                 // If our target sum is greater or equal to the element in the list.
                 // This conditional is done to only consider the elements that can be used to add up to the current target sum 'i'.
                 // Note that the sum 'i' that we are trying to find cannot be less than the num itself that's the idea behind condition i >= num.
