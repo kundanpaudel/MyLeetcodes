@@ -4,10 +4,10 @@ public:
     int characterReplacement(string s, int k)
     {
         vector<int> count(26); // To store the count of characters
-        int i = 0;
-        int j = 0;
-        int result = 0;   // Length of longest substring
-        int maxCount = 0; // Size of current window
+        int i = 0;             // Left pointer
+        int j = 0;             // Right pointer
+        int result = 0;        // Length of longest substring
+        int maxCount = 0;      // Size of current window
 
         while (j < s.size())
         {
