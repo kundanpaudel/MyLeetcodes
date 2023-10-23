@@ -23,7 +23,7 @@ public:
                 continue;
             }
             int j = i + 1;    // First pointer starts from i+1 since we already have nums[i]
-            int k = size - 1; // Second pointer starts from n-1 (Check twoSumII(medium).cpp for this method)
+            int k = size - 1; // Second pointer starts from size-1 (Check twoSumII(medium).cpp for this method)
             while (j < k)
             {                                          // We loop until j and k cross paths
                 int sum = nums[i] + nums[j] + nums[k]; // We calculate the sum for each combination of j and k with i
