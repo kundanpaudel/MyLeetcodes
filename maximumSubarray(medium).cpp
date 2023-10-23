@@ -24,3 +24,22 @@ public:
         return largest;
     }
 };
+
+/*
+// Alternate Solution Using Kadane's Algorithm
+class Solution{
+public:
+    // In this solution the main idea is to keep track of max sum at each index.
+    int maxSubArray(vector<int> &nums){
+        int currentMaxSum = nums[0];
+        int overallMaxSum = nums[0];
+
+        for(int i = 1; i<nums.size(); i++){
+            currentMaxSum = max(nums[i], currentMaxSum + nums[i]);
+            overallMaxSum = max(currentMaxSum, overallMaxSum)
+        }
+        return overallMaxSum;
+    }
+};
+
+*/
