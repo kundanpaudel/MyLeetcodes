@@ -55,3 +55,4 @@ public:
             return result; // Returning the result vector here.
         }
     }
+};
