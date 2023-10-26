@@ -10,8 +10,7 @@ public:
             tMap[chars]++;
         }
 
-        int i = 0;
-        j = 0;                    // Pointers for the window we need to create for the substrings
+        int i = 0, j = 0;                    // Pointers for the window we need to create for the substrings
         int counter = t.length(); // Number of characters we have in t that we need to have in s as well
         int start = 0;            // Start of substring we will return
         int minLength = INT_MAX;  // The minimum length of the substring
